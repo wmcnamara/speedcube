@@ -9,25 +9,25 @@ EditorBuildSettings:
     path: Assets/Graphics/Scenes/MainMenu.unity
     guid: 2d4be812eb89a5e48bfb1ecba389963c
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL1.unity
+    path: Assets/Graphics/Scenes/Levels/LVL1.unity
     guid: 91b4b2e6f908b77429ac134d62d0516d
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL2.unity
+    path: Assets/Graphics/Scenes/Levels/LVL2.unity
     guid: 6df4fc42a2708aa41b60a3a31a90fc09
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL3.unity
+    path: Assets/Graphics/Scenes/Levels/LVL3.unity
     guid: 484c4c267aa75934197f39cd37df29cc
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL4.unity
+    path: Assets/Graphics/Scenes/Levels/LVL4.unity
     guid: 8f29d677bd5f80b459a14282f0ad527f
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL5.unity
+    path: Assets/Graphics/Scenes/Levels/LVL5.unity
     guid: 7e7ce2cf885386c45bbe79fe3f8c9153
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL6.unity
+    path: Assets/Graphics/Scenes/Levels/LVL6.unity
     guid: 18a00f3325c53654b80e193e888382f1
   - enabled: 1
-    path: Assets/Graphics/Scenes/LVL7.unity
+    path: Assets/Graphics/Scenes/Levels/LVL7.unity
     guid: b23e400bbea4b7f4a9180a5840a16545
   - enabled: 1
     path: Assets/Graphics/Scenes/EndGame.unity
