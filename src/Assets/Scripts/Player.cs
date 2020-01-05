@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     //Stops all input if true.
     public bool blockInput;
 
+    //Stops all forward movement if true.
+    public bool blockMovement;
+
     //Movement positions for players.
     public Transform right;
     public Transform middle;
@@ -26,14 +29,17 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Move the player forward.
-        transform.Translate(transform.forward * -movementSpeed * Time.deltaTime);
+        if (!blockMovement)
+        {
+            //Move the player forward.
+            transform.Translate(transform.forward * -movementSpeed * Time.deltaTime);
+        }
 
         //Control right movement.
         if (Input.GetButtonDown("Right") && !blockInput)

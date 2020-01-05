@@ -8,7 +8,7 @@ public class MenuGUIFunctions : MonoBehaviour
     //Sets the level to LVL1. Begins the game.
     public void StartGame()
     {
-        SceneManager.LoadScene("LVL1");
+        SceneManager.LoadScene("Infinite");
     }
 
     //Quits game
@@ -25,6 +25,13 @@ public class MenuGUIFunctions : MonoBehaviour
 
     public void OpenMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ReloadThisLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
