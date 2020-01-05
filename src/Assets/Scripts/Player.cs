@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -59,5 +60,10 @@ public class Player : MonoBehaviour
         if (positionIndex == 1) { transform.position = new Vector3(right.position.x, transform.position.y, transform.position.z); }
         //Middle
         if (positionIndex == 0) { transform.position = new Vector3(middle.position.x, transform.position.y, transform.position.z); }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
