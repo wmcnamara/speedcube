@@ -17,8 +17,15 @@ public class MapGenerator : MonoBehaviour
     public Transform middle;
     public Transform left;
 
+    public Transform midCheckLeft;
+    public Transform midCheckRight;
+
     //Distance to spawn lanes
     public float spawnDistance;
+
+    public float spawnRate = 1f;
+
+    public bool canSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -29,23 +36,36 @@ public class MapGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         //Test code for CreateLane.
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Vector3 pos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - spawnDistance);
             CreateLane(pos);
         }
+        */
+
+        if (canSpawn)
+        {
+            StartCoroutine("Spawn");
+        }
+
+        //Move the player forward.
+        plane.transform.Translate(transform.forward * -player.movementSpeed * Time.deltaTime);
     }
 
     //Create lane and return the object.
     GameObject CreateLane(Vector3 pos)
     {
-        //Create parent object to return.
+        //Create parent object and add a lane script. The function returns this object.,
         GameObject parent = new GameObject("Lane");
+        parent.AddComponent<Lane>();
 
         //Position indexes for spawning.
-        int pos1Range = Random.Range(-1, 1);
-        int pos2Range = Random.Range(-1, 1);
+        int pos1Range = Random.Range(-1, 2);
+        int pos2Range = Random.Range(-1, 2);
+        int midCheckRange = Random.Range(0, 2);
+
         if (pos1Range != pos2Range)
         {
             //Create the objects.
@@ -55,6 +75,26 @@ public class MapGenerator : MonoBehaviour
             //Set the parents to the lane object.
             obstacle1.transform.SetParent(parent.transform);
             obstacle2.transform.SetParent(parent.transform);
+
+
+            //Midchecks are needed to prevent players from spamming left and right to dodge objects.
+            GameObject midCheck1;
+            //Spawn midChecks if at left
+            if (midCheckRange == 0)
+            {
+                midCheck1 = Instantiate(_obstacle, new Vector3(midCheckLeft.transform.position.x,
+                                       pos.y + 0.5f,
+                                       pos.z), Quaternion.identity);
+            }
+
+            //Spawn midChecks if at right
+            if (midCheckRange == 1)
+            {
+                midCheck1 = Instantiate(_obstacle, new Vector3(midCheckRight.transform.position.x,
+                                        pos.y + 0.5f,
+                                        pos.z), Quaternion.identity);
+            }
+
         }
         else   //If the objects are the same index only spawn one to reinforce randomness.
         {
@@ -66,7 +106,6 @@ public class MapGenerator : MonoBehaviour
         }
 
         //Return the completed lane and finish.
-        Debug.Log("Lane Created");
         return parent;
     }
 
@@ -91,7 +130,16 @@ public class MapGenerator : MonoBehaviour
             pos.y + 0.5f,
             pos.z), Quaternion.identity); return obstacle;
         }
-
         return null;
+    }
+
+    IEnumerator Spawn()
+    {
+        canSpawn = false;
+        CreateLane(new Vector3(player.transform.position.x, 
+            player.transform.position.y, 
+            player.transform.position.z - spawnDistance));
+        yield return new WaitForSeconds(spawnRate);
+        canSpawn = true;
     }
 }
