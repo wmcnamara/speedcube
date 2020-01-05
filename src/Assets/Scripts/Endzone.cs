@@ -13,7 +13,7 @@ public class Endzone : MonoBehaviour
         //If the next scene is not null, go to it.
         if (Application.CanStreamedLevelBeLoaded("LVL" + ++levelIndex))
         {
-            SceneManager.LoadScene("LVL" + ++levelIndex);
+            SceneManager.LoadScene("LVL" + levelIndex);
         }
         else
         {
