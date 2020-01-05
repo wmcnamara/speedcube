@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2073830112}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17118664, g: 0.21462415, b: 0.2900756, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -506,6 +506,7 @@ MonoBehaviour:
   left: {fileID: 996267192}
   positionIndex: 0
   movementSpeed: 20
+  smoothSpeed: 0.1
 --- !u!54 &456716056
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -648,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 456716050}
-  cameraMoveSpeed: 0.125
+  cameraMoveSpeed: 0.2
   offset: {x: 0, y: 1.8, z: 4}
 --- !u!1 &795865414
 GameObject:

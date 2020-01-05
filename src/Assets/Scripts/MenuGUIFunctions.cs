@@ -22,4 +22,9 @@ public class MenuGUIFunctions : MonoBehaviour
     {
         Application.OpenURL("https://github.com/westonmcnamara");
     }
+
+    public void OpenMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

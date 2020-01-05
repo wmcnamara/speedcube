@@ -18,6 +18,11 @@ public class Player : MonoBehaviour
 
     public float movementSpeed;
 
+    //Used by smoothdamp.
+    public float smoothSpeed = 0.1f;
+    //Value used exclusively by smoothdamp.
+    private Vector3 velocity = Vector3.zero;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,11 +60,16 @@ public class Player : MonoBehaviour
         //Set player x position based on index.
 
         //Left
-        if (positionIndex == -1) { transform.position = new Vector3(left.position.x, transform.position.y, transform.position.z); }
+        if (positionIndex == -1) { transform.position = Vector3.SmoothDamp(transform.position, 
+            new Vector3(left.position.x, transform.position.y, transform.position.z), ref velocity, smoothSpeed); }
         //Right
-        if (positionIndex == 1) { transform.position = new Vector3(right.position.x, transform.position.y, transform.position.z); }
+        if (positionIndex == 1) { transform.position = Vector3.SmoothDamp(transform.position,
+            new Vector3(right.position.x, transform.position.y, transform.position.z), ref velocity, smoothSpeed);
+        }
         //Middle
-        if (positionIndex == 0) { transform.position = new Vector3(middle.position.x, transform.position.y, transform.position.z); }
+        if (positionIndex == 0) { transform.position = Vector3.SmoothDamp(transform.position,
+            new Vector3(middle.position.x, transform.position.y, transform.position.z), ref velocity, smoothSpeed);
+        }
 
         if (Input.GetButtonDown("Cancel"))
         {

@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public GameObject target;
 
     //Amount to smooth movement
-    public float cameraMoveSpeed = 0.125f;
+    public float cameraMoveSpeed = 0.2f;
 
     //Offset from object to camera.
     public Vector3 offset;
@@ -20,6 +20,6 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         //Move the camera to the target, with smoothed movement. Offset added to keep the view.
-        transform.position = Vector3.SmoothDamp(this.transform.position, target.transform.position + offset, ref velocity, cameraMoveSpeed);
+        transform.position = Vector3.SmoothDamp(this.transform.position, target.transform.position + offset, ref velocity, cameraMoveSpeed * Time.deltaTime);
     }
 }
