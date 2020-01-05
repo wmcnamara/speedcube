@@ -288,7 +288,7 @@ MonoBehaviour:
   middle: {fileID: 487021156}
   left: {fileID: 996267192}
   positionIndex: 0
-  movementSpeed: 20
+  movementSpeed: 35
   smoothSpeed: 0.1
 --- !u!54 &456716056
 Rigidbody:

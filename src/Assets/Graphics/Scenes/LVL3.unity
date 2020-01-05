@@ -486,7 +486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &456716055
 MonoBehaviour:
@@ -505,7 +505,7 @@ MonoBehaviour:
   middle: {fileID: 487021156}
   left: {fileID: 996267192}
   positionIndex: 0
-  movementSpeed: 20
+  movementSpeed: 35
   smoothSpeed: 0.1
 --- !u!54 &456716056
 Rigidbody:
@@ -993,7 +993,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &889428517
 MonoBehaviour:

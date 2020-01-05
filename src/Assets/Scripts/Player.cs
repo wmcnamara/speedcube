@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     //A number indicating player position. -1 Left. 0 Middle. 1 Right.
     public int positionIndex;
 
-    public float movementSpeed;
+    public float movementSpeed = 35;
 
     //Used by smoothdamp.
     public float smoothSpeed = 0.1f;

@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Graphics/Scenes/LVL6.unity
     guid: 18a00f3325c53654b80e193e888382f1
   - enabled: 1
+    path: Assets/Graphics/Scenes/LVL7.unity
+    guid: b23e400bbea4b7f4a9180a5840a16545
+  - enabled: 1
     path: Assets/Graphics/Scenes/EndGame.unity
     guid: db012da742ffe5a48a7acaad8474be81
   m_configObjects: {}
