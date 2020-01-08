@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(0, 0.5f, 0);
             GameObject.FindGameObjectWithTag("Map").transform.position = new Vector3(0, 0, 0);
         }
-        if (Input.anyKeyDown && endGame)
+        if (Input.GetKeyDown(KeyCode.Space) && endGame)
         {
             GameObject.Find("MenuGUIFunctions").GetComponent<MenuGUIFunctions>().ReloadThisLevel();
         }
