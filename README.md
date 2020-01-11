@@ -8,9 +8,9 @@ SpeedCube was developed in Unity, with C#.
 # Input
 Input in SpeedCube is simple and straightforward.
 
-Switch Lanes: A/D | Left/Right Arrows
-Restart Game After Death: Space
-Main Menu: Escape
+Switch Lanes: A/D | Left/Right Arrows <br/>
+Restart Game After Death: Space <br/>
+Main Menu: Escape <br/>
 
 If you know a cheat code, do this to trigger it.
 
