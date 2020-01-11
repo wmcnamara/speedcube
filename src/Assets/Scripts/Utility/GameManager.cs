@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     {
         endGamePanel.SetActive(true);
         scoreText.gameObject.SetActive(false);
-        endGameScoreText.text = "Final Score: " + (int)score;
+        endGameScoreText.text = "FINAL SCORE: " + (int)score;
         Time.timeScale = 0;
         //If they press a key reload the scene.
         endGame = true;
