@@ -26,6 +26,10 @@ public class Player : MonoBehaviour
     //Value used exclusively by smoothdamp.
     private Vector3 velocity = Vector3.zero;
 
+
+    //Cheat code vars
+    public Material indpMat;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,5 +85,13 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenu");
         }
+
+        //CHEAT CODES//
+        //INDP skin cheat.
+        if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpSkinActive)
+        {
+            GetComponent<Renderer>().material = indpMat;
+        }
     }
+
 }

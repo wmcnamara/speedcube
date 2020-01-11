@@ -7,6 +7,7 @@ TagManager:
   - EndGamePanel
   - GameManager
   - Map
+  - CheatCodeManager
   layers:
   - Default
   - TransparentFX
