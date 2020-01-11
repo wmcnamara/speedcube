@@ -1,8 +1,6 @@
 # SpeedCube
 Infinite runner game. The player switches lanes to move out of the way of procedurally generated red blocks. Try and get the highest score. Do what you want with the source code.
 
-Any scripts/models/scenes that arent in the release are in the "obsolete" folder. In the games first version before infinite runner, it had levels. Those will be placed in the obsolete folder, incase you want to look at them.
-
 SpeedCube was developed in Unity, with C#.
 
 ![](example.gif)
@@ -32,13 +30,13 @@ To install SpeedCube:
 # GAME RECORDS: 
 
 The current record for highest score is held by: Manjot Mann - 146 - 01/11/2020
-![Screenshot of 146 | Courtesy of Manjot Mann](recordscreenshot.png)
+![Screenshot of 146 | Courtesy of Manjot Mann](https://github.com/westonmcnamara/speedcube/blob/master/recordscreeshot.png)
 
+This highscore is legitimate because only reskin cheat codes were used. Block reskin cheat codes do not effect gameplay, and therefore can be used in a highscore image.
 # SUBMIT YOUR SCORE:
 
 To submit your own score: 
-1. Take a screenshot of the final score with the entire screen fully visible.
+1. Take a screenshot of the final score with the entire screen fully visible. Cheat codes are not allowed, unless it is a reskin code.
 2. Email the image to westonfmcnamara@gmail.com with a date, and a name.
-3. The image will be reviewed.
-
+3. The image will be reviewed and accepted if found to be legitimate.
 
