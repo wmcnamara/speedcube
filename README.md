@@ -5,6 +5,8 @@ Any scripts/models/scenes that arent in the release are in the "obsolete" folder
 
 SpeedCube was developed in Unity, with C#.
 
+![](example.gif)
+
 # Input
 Input in SpeedCube is simple and straightforward.
 
