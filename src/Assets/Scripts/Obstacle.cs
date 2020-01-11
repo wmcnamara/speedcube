@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 //Uses a timestamp method to destroy the object after player zooms by it.
-public class InfiniteObstacle : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
     public float deathTime = 5.0f;
 
