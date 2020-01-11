@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //When the game ends, the timescale is set to 0. This is done to make sure it doesnt stop running.
         Time.timeScale = 1;
     }
 
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
             transform.Translate(transform.forward * -movementSpeed * Time.deltaTime);
         }
 
+        //Control position index. The lane is based on this.
         //Control right movement.
         if (Input.GetButtonDown("Right") && !blockInput)
         {
@@ -61,7 +63,6 @@ public class Player : MonoBehaviour
         {
             positionIndex = 1;
         }
-
         if (positionIndex < -1)
         {
             positionIndex = -1;
@@ -69,21 +70,19 @@ public class Player : MonoBehaviour
 
         //Set player x position based on index.
 
+        //Move the player with a bit of a delay to the desired lane.
         //Left
         if (positionIndex == -1) { transform.position = Vector3.SmoothDamp(transform.position, 
             new Vector3(left.position.x, transform.position.y, transform.position.z), ref velocity, smoothSpeed); }
+
         //Right
         if (positionIndex == 1) { transform.position = Vector3.SmoothDamp(transform.position,
             new Vector3(right.position.x, transform.position.y, transform.position.z), ref velocity, smoothSpeed);
         }
+
         //Middle
         if (positionIndex == 0) { transform.position = Vector3.SmoothDamp(transform.position,
             new Vector3(middle.position.x, transform.position.y, transform.position.z), ref velocity, smoothSpeed);
-        }
-
-        if (Input.GetButtonDown("Cancel"))
-        {
-            SceneManager.LoadScene("MainMenu");
         }
 
         //CHEAT CODES//
@@ -91,6 +90,12 @@ public class Player : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpSkinActive)
         {
             GetComponent<Renderer>().material = indpMat;
+        }
+
+        //Go to the main menu with escape.
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 

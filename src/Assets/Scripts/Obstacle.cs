@@ -6,8 +6,10 @@ using UnityEngine;
 //Uses a timestamp method to destroy the object after player zooms by it.
 public class Obstacle : MonoBehaviour
 {
+    //Time until the obstacle is destroyed.
     public float deathTime = 5.0f;
 
+    //Used to keep track of time since creation.
     private float initTime;
     // Start is called before the first frame update
     void Start()
@@ -27,8 +29,10 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //If the block detects a collision from the player tag, end the game.
         if (other.tag == "Player")
         {
+            //Requires tag.
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().EndGame();
             Debug.Log("Game Over");
         }

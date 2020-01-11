@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject endGamePanel;
     public TextMeshProUGUI endGameScoreText;
 
+    //Score variable.
     private float score;
 
     //Game is over.
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Increment score. +1 score a second.
         score += 1 * Time.deltaTime;
 
         //Truncate the integer to make reading the score easier.
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(0, 0.5f, 0);
             GameObject.FindGameObjectWithTag("Map").transform.position = new Vector3(0, 0, 0);
         }
+
+        //Allows the player to press space to restart.
         if (Input.GetKeyDown(KeyCode.Space) && endGame)
         {
             GameObject.Find("MenuGUIFunctions").GetComponent<MenuGUIFunctions>().ReloadThisLevel();
@@ -37,15 +41,22 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        //If they restart the game, it should set this to false.
         endGame = false;
     }
+    
+    //Ran from OnTriggerEnter() from any obstacle colliding with the Player.
     public void EndGame()
     {
+        //Turn on the UI and remove the scoretext in the top left corner.
         endGamePanel.SetActive(true);
         scoreText.gameObject.SetActive(false);
         endGameScoreText.text = "FINAL SCORE: " + (int)score;
+
+        //Stops player movement but allows GUI and key input.
         Time.timeScale = 0;
-        //If they press a key reload the scene.
+        
+        //Allows after game input checking.
         endGame = true;
     }
 }

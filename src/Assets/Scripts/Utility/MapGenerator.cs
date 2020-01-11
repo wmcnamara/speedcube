@@ -23,28 +23,24 @@ public class MapGenerator : MonoBehaviour
     //Distance to spawn lanes
     public float spawnDistance;
 
+    //Spawn a lane every second.
     public float spawnRate = 1f;
 
-    public bool canSpawn;
+
+    //Assures the coroutine isnt ran every frame.
+    private bool canSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Grab player data
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        //Test code for CreateLane.
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Vector3 pos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - spawnDistance);
-            CreateLane(pos);
-        }
-        */
-
+        //Spawn the lanes
         if (canSpawn)
         {
             StartCoroutine("Spawn");
@@ -135,10 +131,15 @@ public class MapGenerator : MonoBehaviour
 
     IEnumerator Spawn()
     {
+        //Stop coroutine from running twice.
         canSpawn = false;
+
+        //Make a lane and place it.
         CreateLane(new Vector3(player.transform.position.x, 
             player.transform.position.y, 
             player.transform.position.z - spawnDistance));
+
+        //Wait for the spawnrate, and then allow the coroutine to run again.
         yield return new WaitForSeconds(spawnRate);
         canSpawn = true;
     }
