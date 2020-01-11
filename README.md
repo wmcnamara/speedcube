@@ -22,7 +22,7 @@ NOTE: Cheat codes last for as long as you play the game. When the application is
 # Installation
 To install SpeedCube:
 
-Download "SpeedCube.zip" below.
-Extract the .zip file using Winrar, or the default windows extractor.
-Make sure all data files accompany the Speedcube.exe file.
-Run "Speedcube.exe" to start the game.
+1. Download "SpeedCube.zip" below.
+2. Extract the .zip file using Winrar, or the default windows extractor.
+3. Make sure all data files accompany the Speedcube.exe file.
+4. Run "Speedcube.exe" to start the game.
