@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
         //Increment score. +1 score a second.
         score += 1 * Time.deltaTime;
 
-        //Truncate the integer to make reading the score easier.
-        scoreText.text = "Score: " + (int)score;
+        //Cast the float to make reading the score easier.
+        scoreText.text = "SCORE: " + (int)score;
 
         //Reset spawn and map when distance gets too large.
         if (GameObject.FindGameObjectWithTag("Player").transform.position.z < -10000)

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CheatCodes : MonoBehaviour
 {
+    //Materials to use when INDP cheat code is active.
+    public Material[] indpMat;
+
     //Cheat codes reset after restart.
     private void Start()
     {

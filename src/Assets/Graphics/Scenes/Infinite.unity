@@ -149,8 +149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000012398, y: -247}
-  m_SizeDelta: {x: 179.3, y: 53.3}
+  m_AnchoredPosition: {x: -0.000012398, y: -249}
+  m_SizeDelta: {x: 179.3, y: 50.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &85264246
 MonoBehaviour:
@@ -324,7 +324,6 @@ MonoBehaviour:
   midCheckRight: {fileID: 1740649803}
   spawnDistance: 40
   spawnRate: 0.4
-  canSpawn: 1
 --- !u!4 &406592408
 Transform:
   m_ObjectHideFlags: 0
@@ -784,8 +783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 6, y: -28.350006}
-  m_SizeDelta: {x: 318, y: 48.700012}
+  m_AnchoredPosition: {x: 25, y: -30.6}
+  m_SizeDelta: {x: 347.1, y: 37.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092619506
 MonoBehaviour:
@@ -834,8 +833,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34
-  m_fontSizeBase: 34
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -851,7 +850,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -941,8 +940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -51.800003}
-  m_SizeDelta: {x: 317.1, y: 46.299988}
+  m_AnchoredPosition: {x: 0, y: -49}
+  m_SizeDelta: {x: 397.1, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380015710
 MonoBehaviour:
@@ -1376,8 +1375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000012398, y: -148}
-  m_SizeDelta: {x: 260, y: 75.3}
+  m_AnchoredPosition: {x: 0.000012398, y: -130}
+  m_SizeDelta: {x: 320, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726483075
 MonoBehaviour:
@@ -1443,7 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.7075472, g: 0.13683695, b: 0.13683695, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1727,8 +1726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 120, y: -35}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 204.7, y: -43.96}
+  m_SizeDelta: {x: 369.4, y: 67.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933652037
 MonoBehaviour:
@@ -1748,7 +1747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score:'
+  m_text: 'SCORE: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1776,8 +1775,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1817,9 +1816,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1933652037}
-    characterCount: 6
+    characterCount: 7
     spriteCount: 0
-    spaceCount: 0
+    spaceCount: 1
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -1891,6 +1890,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eefc2ec6bcd87748a54f4be81a5b507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indpMat:
+  - {fileID: 2100000, guid: 208ba53abffcd3c4f8d4d1b57af81691, type: 2}
+  - {fileID: 2100000, guid: 2714dde111e33d24fa614606e0dadd32, type: 2}
+  - {fileID: 2100000, guid: cec89899fd020874a8b75491db66620e, type: 2}
+  - {fileID: 2100000, guid: e191124516de0d548993e08b9de7c47f, type: 2}
+  - {fileID: 2100000, guid: 3abbd6f45d76b9c4eb0af7c2a82f2690, type: 2}
+  - {fileID: 2100000, guid: 4ee47af601296d0458bc08bf1a74b8c0, type: 2}
+  - {fileID: 2100000, guid: bc6d523ebdab70d4cb8e0045598d50b3, type: 2}
   indpSkinActive: 0
 --- !u!1 &1939322991
 GameObject:

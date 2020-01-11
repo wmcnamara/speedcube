@@ -11,11 +11,24 @@ public class Obstacle : MonoBehaviour
 
     //Used to keep track of time since creation.
     private float initTime;
+
     // Start is called before the first frame update
     void Start()
     {
         //Time since level loaded.
         initTime = Time.timeSinceLevelLoad;
+
+        ///////CHEAT CODES///////////
+        //Sets renderer materials to random INDP material if the cheat is activated
+        if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpSkinActive)
+        {
+            //Random int to choose what skin the obstacle has
+            int rand = Random.Range(0, 7);
+
+            //Set material to corresponding number.
+            GetComponent<Renderer>().material = GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpMat[rand];
+        }
+        ////////////////////////////
     }
 
     private void Update()
@@ -25,6 +38,7 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
