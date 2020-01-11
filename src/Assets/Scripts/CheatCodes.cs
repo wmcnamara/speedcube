@@ -14,7 +14,7 @@ public class CheatCodes : MonoBehaviour
     void Update()
     {
         //If keys I N D P are pressed run INDPSkin() code.
-        if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.N) && Input.GetKeyDown(KeyCode.D) && Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKey(KeyCode.I) && Input.GetKey(KeyCode.N) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.P))
         {
             INDPSkin();
         } 
