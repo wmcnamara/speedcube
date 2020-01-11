@@ -28,3 +28,17 @@ To install SpeedCube:
 2. Extract the .zip file using Winrar, or the default windows extractor.
 3. Make sure all data files accompany the Speedcube.exe file.
 4. Run "Speedcube.exe" to start the game.
+
+# GAME RECORDS: 
+
+The current record for highest score is held by: Manjot Mann - 146 - 01/11/2020
+![Screenshot of 146 | Courtesy of Manjot Mann](recordscreenshot.png)
+
+# SUBMIT YOUR SCORE:
+
+To submit your own score: 
+1. Take a screenshot of the final score with the entire screen fully visible.
+2. Email the image to westonfmcnamara@gmail.com with a date, and a name.
+3. The image will be reviewed.
+
+
