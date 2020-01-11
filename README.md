@@ -32,7 +32,7 @@ To install SpeedCube:
 # GAME RECORDS: 
 
 The current record for highest score is held by: Manjot Mann - 146 - 01/11/2020
-![Screenshot of 146 | Courtesy of Manjot Mann](recordscreenshot.png)
+![Screenshot of 146 | Courtesy of Manjot Mann](https://github.com/westonmcnamara/speedcube/blob/master/recordscreeshot.png)
 
 # SUBMIT YOUR SCORE:
 
