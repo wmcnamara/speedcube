@@ -29,8 +29,8 @@ To install SpeedCube:
 
 # GAME RECORDS: 
 
-The current record for highest score is held by: Manjot Mann - 146 - 01/11/2020
-![Screenshot of 146 | Courtesy of Manjot Mann](https://github.com/westonmcnamara/speedcube/blob/master/recordscreeshot.png)
+The current record for highest score is held by: Manjot Mann - 213 - 01/11/2020
+![Screenshot of 213 | Courtesy of Manjot Mann](https://github.com/westonmcnamara/speedcube/blob/master/recordscreeshot.png)
 
 This highscore is legitimate because only reskin cheat codes were used. Block reskin cheat codes do not effect gameplay, and therefore can be used in a highscore image.
 # SUBMIT YOUR SCORE:
