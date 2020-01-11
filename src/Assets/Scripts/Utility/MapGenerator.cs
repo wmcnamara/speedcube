@@ -27,7 +27,7 @@ public class MapGenerator : MonoBehaviour
     public float spawnRate = 1f;
 
     //Assures the coroutine isnt ran every frame.
-    private bool canSpawn = true;
+    public bool canSpawn = true;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +59,7 @@ public class MapGenerator : MonoBehaviour
         GameObject parent = new GameObject("Lane");
         parent.AddComponent<Lane>();
 
-        //Position indexes for spawning.
+        //Position indices for spawning.
         int pos1Range = Random.Range(-1, 2);
         int pos2Range = Random.Range(-1, 2);
         int midCheckRange = Random.Range(0, 2);
@@ -73,7 +73,6 @@ public class MapGenerator : MonoBehaviour
             //Set the parents to the lane object.
             obstacle1.transform.SetParent(parent.transform);
             obstacle2.transform.SetParent(parent.transform);
-
 
             //Midchecks are needed to prevent players from spamming left and right to dodge objects.
             GameObject midCheck1;
