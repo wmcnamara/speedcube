@@ -26,13 +26,15 @@ public class MapGenerator : MonoBehaviour
     //Spawn a lane every second.
     public float spawnRate = 1f;
 
-
     //Assures the coroutine isnt ran every frame.
-    private bool canSpawn;
+    private bool canSpawn = true;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Make sure it runs properly.
+        canSpawn = true;
+
         //Grab player data
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
