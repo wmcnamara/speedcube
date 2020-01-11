@@ -18,3 +18,11 @@ If you know a cheat code, do this to trigger it.
 2. Hold down each key of the code simultaniously. Timing, order and other parameters are irrelevant. If a codes corresponding buttons are pressed simultaniously, it will activate.
 
 NOTE: Cheat codes last for as long as you play the game. When the application is closed, you will have to re-enter them the next time you play.
+
+# Installation
+To install SpeedCube:
+
+Download "SpeedCube.zip" below.
+Extract the .zip file using Winrar, or the default windows extractor.
+Make sure all data files accompany the Speedcube.exe file.
+Run "Speedcube.exe" to start the game.
