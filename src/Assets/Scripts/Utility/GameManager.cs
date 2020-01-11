@@ -6,6 +6,7 @@ using TMPro;
 //Tracks score and other game data.
 public class GameManager : MonoBehaviour
 {
+    //UI elements
     public TextMeshProUGUI scoreText;
     public GameObject endGamePanel;
     public TextMeshProUGUI endGameScoreText;
@@ -18,7 +19,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         score += 1 * Time.deltaTime;
-        scoreText.text = "Score: " + score.ToString();
+
+        //Truncate the integer to make reading the score easier.
+        scoreText.text = "Score: " + (int)score;
 
         //Reset spawn and map when distance gets too large.
         if (GameObject.FindGameObjectWithTag("Player").transform.position.z < -10000)
