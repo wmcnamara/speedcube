@@ -46,6 +46,6 @@ public class CheatCodes : MonoBehaviour
     //The player checks if this is true and runs the response function.
     private void RUN90 ()
     {
-
+        run90Enabled = true;
     }
 }

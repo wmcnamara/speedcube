@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 1;
 
         ////RUN90 CHEAT CODE//////
-        if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpSkinActive)
+        if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().run90Enabled)
         {
             movementSpeed *= 2.3f;
         }
