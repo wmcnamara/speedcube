@@ -20,7 +20,13 @@ public class CheatCodes : MonoBehaviour
         if (Input.GetKey(KeyCode.I) && Input.GetKey(KeyCode.N) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.P))
         {
             INDPSkin();
-        } 
+        }
+
+        //If keys R U N 9 are pressed the RUN90 code.
+        if (Input.GetKey(KeyCode.R) && Input.GetKey(KeyCode.U) && Input.GetKey(KeyCode.N) && Input.GetKey(KeyCode.Alpha9))
+        {
+            RUN90();
+        }
     }
 
     //Variable to check if indp skin cheat is enabled.
@@ -28,8 +34,18 @@ public class CheatCodes : MonoBehaviour
 
     //Add INDP skin to player.
     //The player checks if this is true and runs the response function.
-    private void INDPSkin ()
+    private void INDPSkin()
     {
         indpSkinActive = true;
+    }
+
+    //Variable to check if RUN90 cheat is enabled.
+    public bool run90Enabled;
+
+    //Double player movement speed.
+    //The player checks if this is true and runs the response function.
+    private void RUN90 ()
+    {
+
     }
 }

@@ -35,6 +35,12 @@ public class Player : MonoBehaviour
     {
         //When the game ends, the timescale is set to 0. This is done to make sure it doesnt stop running.
         Time.timeScale = 1;
+
+        ////RUN90 CHEAT CODE//////
+        if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpSkinActive)
+        {
+            movementSpeed *= 2.3f;
+        }
     }
 
     // Update is called once per frame

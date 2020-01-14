@@ -23,7 +23,7 @@ public class Obstacle : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpSkinActive)
         {
             //Random int to choose what skin the obstacle has
-            int rand = Random.Range(0, 7);
+            int rand = Random.Range(0, 8);
 
             //Set material to corresponding number.
             GetComponent<Renderer>().material = GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>().indpMat[rand];
