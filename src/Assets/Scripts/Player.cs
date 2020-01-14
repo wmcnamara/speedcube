@@ -41,6 +41,8 @@ public class Player : MonoBehaviour
         {
             movementSpeed *= 2.3f;
         }
+
+        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("CheatCodeManager").GetComponent<CheatCodes>());
     }
 
     // Update is called once per frame

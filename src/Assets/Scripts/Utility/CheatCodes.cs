@@ -10,7 +10,6 @@ public class CheatCodes : MonoBehaviour
     //Cheat codes reset after restart.
     private void Start()
     {
-        DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
@@ -42,10 +41,14 @@ public class CheatCodes : MonoBehaviour
     //Variable to check if RUN90 cheat is enabled.
     public bool run90Enabled;
 
+    //Run90 song
+    public AudioSource run90song;
+
     //Double player movement speed.
     //The player checks if this is true and runs the response function.
     private void RUN90 ()
     {
         run90Enabled = true;
+        run90song.Play();
     }
 }
