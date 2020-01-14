@@ -324,6 +324,7 @@ MonoBehaviour:
   midCheckRight: {fileID: 1740649803}
   spawnDistance: 40
   spawnRate: 0.4
+  canSpawn: 1
 --- !u!4 &406592408
 Transform:
   m_ObjectHideFlags: 0
@@ -1898,6 +1899,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3abbd6f45d76b9c4eb0af7c2a82f2690, type: 2}
   - {fileID: 2100000, guid: 4ee47af601296d0458bc08bf1a74b8c0, type: 2}
   - {fileID: 2100000, guid: bc6d523ebdab70d4cb8e0045598d50b3, type: 2}
+  - {fileID: 2100000, guid: 559014d387e1e804f9dfeccb62c44754, type: 2}
   indpSkinActive: 0
 --- !u!1 &1939322991
 GameObject:
