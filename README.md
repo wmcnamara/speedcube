@@ -35,6 +35,6 @@ The current record for highest score is held by: Manjot Mann - 213 - 01/11/2020
 
 To submit your own score: 
 1. Take a screenshot of the final score with the entire screen fully visible. Cheat codes are not allowed, unless it is a reskin code.
-2. Email the image to westonfmcnamara@gmail.com with a date, and a name.
+2. Create a pull request editing this readme. Include a screenshot, name info, date and proof. Place them under "Game Records". I will edit and merge if it is legitimate.
 3. The image will be reviewed and accepted if found to be legitimate.
 
