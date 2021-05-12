@@ -27,6 +27,10 @@ To install SpeedCube:
 3. Make sure all data files accompany the Speedcube.exe file.
 4. Run "Speedcube.exe" to start the game.
 
+## Linux Installation
+  Thanks to [Jake Guy's](https://github.com/JakeGuy11/speedcube) kind contribution, there is now a Linux install script!
+  Check the `install` folder for more information if you are a linux user.
+  
 # GAME RECORDS: 
 
 The current record for highest score is held by: Manjot Mann - 213 - 01/11/2020
