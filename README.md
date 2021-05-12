@@ -28,7 +28,7 @@ To install SpeedCube:
 4. Run "Speedcube.exe" to start the game.
 
 ## Linux Installation
-  Thanks to [Jake Guy's](https://github.com/JakeGuy11/speedcube) kind contribution, there is now a Linux install script!
+  Thanks to [Jake Guy's](https://github.com/JakeGuy11) kind contribution, there is now a Linux install script!
   Check the `install` folder for more information if you are a linux user.
   
 # GAME RECORDS: 
