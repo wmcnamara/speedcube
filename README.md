@@ -30,8 +30,7 @@ To install SpeedCube:
 ## Linux Installation
   Thanks to [Jake Guy's](https://github.com/JakeGuy11) kind contribution, there is now a Linux install script!
   Check the `install` folder for more information if you are a linux user.
-  
-  #This is not my game, all credit goes to [Weston McNamara](https://github.com/wmcnamara).
+
   
 # GAME RECORDS: 
 
