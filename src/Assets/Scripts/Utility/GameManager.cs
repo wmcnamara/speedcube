@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "SCORE: " + (int)score;
 
         //Reset spawn and map when distance gets too large.
+        //Someone beat it
         if (GameObject.FindGameObjectWithTag("Player").transform.position.z < -10000)
         {
             GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(0, 0.5f, 0);
